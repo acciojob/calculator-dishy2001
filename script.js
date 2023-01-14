@@ -1,6 +1,5 @@
 //your code here
 function updatescreen(v) {
-  console.log(typeof v);
   let res = document.getElementById("screen").value += v;
   if(res.length > 2) {
     result();
