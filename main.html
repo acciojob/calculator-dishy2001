@@ -13,32 +13,37 @@
             <table BORDER=5>
                 <tr>
                     <td ALIGN="center">
-                        <input type="text" id="screen" style="width:60%">
-						<input type="text" id="preCalc" style="width:25%">
+                        <input type="text" id="screen" style="width:70%" value="0">
                         <button onclick="event.preventDefault();reset()">Clear</button>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td ALIGN="center">
+						<input type="text" id="preCalc" style="width:70%">
 						<button onclick="event.preventDefault();back()">Back</button>
                         <br/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button onclick="event.preventDefault();updatescreen(8)">8</button>
-                        <button onclick="event.preventDefault();updatescreen(7)">7</button>
-                        <button onclick="event.preventDefault();updatescreen(9)">9</button>
+                        <button onclick="event.preventDefault();updatescreen('8')">8</button>
+                        <button onclick="event.preventDefault();updatescreen('7')">7</button>
+                        <button onclick="event.preventDefault();updatescreen('9')">9</button>
                         <button onclick="event.preventDefault();updatescreen('+');">+</button>
                         <br>
-                        <button onclick="event.preventDefault();updatescreen(4)">4</button>
-                        <button onclick="event.preventDefault();updatescreen(5)">5</button>
-                        <button onclick="event.preventDefault();updatescreen(6)">6</button>
+                        <button onclick="event.preventDefault();updatescreen('4')">4</button>
+                        <button onclick="event.preventDefault();updatescreen('5)">5</button>
+                        <button onclick="event.preventDefault();updatescreen('6')">6</button>
                         <button onclick="event.preventDefault();updatescreen('-')">-</button>
                         <br>
-                        <button onclick="event.preventDefault();updatescreen(1)">1</button>
-                        <button onclick="event.preventDefault();updatescreen(2)">2</button>
-                        <button onclick="event.preventDefault();updatescreen(3)">3</button>
+                        <button onclick="event.preventDefault();updatescreen('1')">1</button>
+                        <button onclick="event.preventDefault();updatescreen('2')">2</button>
+                        <button onclick="event.preventDefault();updatescreen('3)">3</button>
                         <button onclick="event.preventDefault();updatescreen('*')">X</button>
                         <br>
                         <button onclick="event.preventDefault();updatescreen('.')">.</button>
-                        <button onclick="event.preventDefault();updatescreen(0)">0</button>
+                        <button onclick="event.preventDefault();updatescreen('0')">0</button>
                         <button onclick="event.preventDefault();updatescreen('/')">/</button>
 						<button id="ans" onclick="event.preventDefault();ans()">ANS</button>
                     </td>
