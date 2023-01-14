@@ -8,6 +8,42 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div id="content">
+        <form id = "calc">
+            <table BORDER=5>
+                <tr>
+                    <td ALIGN="center">
+                        <input type="text" id="screen" style="width:70%">
+                        <button onclick="event.preventDefault();result()">ANS</button>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="event.preventDefault();updatescreen(8)">8</button>
+                        <button onclick="event.preventDefault();updatescreen(7)">7</button>
+                        <button onclick="event.preventDefault();updatescreen(9)">9</button>
+                        <button onclick="event.preventDefault();updatescreen('+');">+</button>
+                        <br>
+                        <button onclick="event.preventDefault();updatescreen(4)">4</button>
+                        <button onclick="event.preventDefault();updatescreen(5)">5</button>
+                        <button onclick="event.preventDefault();updatescreen(6)">6</button>
+                        <button onclick="event.preventDefault();updatescreen('-')">-</button>
+                        <br>
+                        <button onclick="event.preventDefault();updatescreen(1)">1</button>
+                        <button onclick="event.preventDefault();updatescreen(2)">2</button>
+                        <button onclick="event.preventDefault();updatescreen(3)">3</button>
+                        <button onclick="event.preventDefault();updatescreen('*')">X</button>
+                        <br>
+                        <button onclick="event.preventDefault();reset()">C</button>
+                        <button onclick="event.preventDefault();updatescreen(0)">0</button>
+                        <button onclick="event.preventDefault();updatescreen('.')">.</button>
+                        <button onclick="event.preventDefault();updatescreen('/')">/</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
