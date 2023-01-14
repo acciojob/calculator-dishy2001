@@ -13,8 +13,10 @@
             <table BORDER=5>
                 <tr>
                     <td ALIGN="center">
-                        <input type="text" id="screen" style="width:70%">
-                        <button onclick="event.preventDefault();result()">ANS</button>
+                        <input type="text" id="screen" style="width:60%">
+						<input type="text" id="preCalc" style="width:25%">
+                        <button onclick="event.preventDefault();reset()">Clear</button>
+						<button onclick="event.preventDefault();back()">Back</button>
                         <br/>
                     </td>
                 </tr>
@@ -35,10 +37,10 @@
                         <button onclick="event.preventDefault();updatescreen(3)">3</button>
                         <button onclick="event.preventDefault();updatescreen('*')">X</button>
                         <br>
-                        <button onclick="event.preventDefault();reset()">C</button>
-                        <button onclick="event.preventDefault();updatescreen(0)">0</button>
                         <button onclick="event.preventDefault();updatescreen('.')">.</button>
+                        <button onclick="event.preventDefault();updatescreen(0)">0</button>
                         <button onclick="event.preventDefault();updatescreen('/')">/</button>
+						<button id="ans" onclick="event.preventDefault();ans()">ANS</button>
                     </td>
                 </tr>
             </table>
